@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serrurier Paris 24h/24 - Intervention Rapide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <svg
+              class="h-8 w-8 text-blue-800 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+              />
+            </svg>
+            <span class="text-xl font-bold text-gray-800">Serrurier Paris</span>
+          </div>
+
+          <!-- Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#accueil"
+              class="nav-link text-gray-700 hover:text-blue-800 px-3 py-2 font-medium"
+              >Accueil</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-700 hover:text-blue-800 px-3 py-2 font-medium"
+              >Services</a
+            >
+            <a
+              href="#apropos"
+              class="nav-link text-gray-700 hover:text-blue-800 px-3 py-2 font-medium"
+              >À propos</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-blue-800 px-3 py-2 font-medium"
+              >Contact</a
+            >
+            <a
+              href="#simulateur"
+              class="nav-link text-gray-700 hover:text-blue-800 px-3 py-2 font-medium"
+              >Simulateur</a
+            >
+          </div>
+
+          <!-- Bouton menu mobile -->
+          <button id="mobile-menu-btn" class="md:hidden">
+            <svg
+              class="h-6 w-6 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <div id="mobile-menu" class="mobile-menu md:hidden py-4 border-t">
+          <a
+            href="#accueil"
+            class="block py-2 text-gray-700 hover:text-blue-800"
+            >Accueil</a
+          >
+          <a
+            href="#services"
+            class="block py-2 text-gray-700 hover:text-blue-800"
+            >Services</a
+          >
+          <a
+            href="#apropos"
+            class="block py-2 text-gray-700 hover:text-blue-800"
+            >À propos</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-700 hover:text-blue-800"
+            >Contact</a
+          >
+          <a
+            href="#simulateur"
+            class="block py-2 text-gray-700 hover:text-blue-800"
+            >Simulateur</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Accueil -->
+    <section id="accueil" class="page-section active">
+      <div class="a-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Serrurier disponible 24h/24 et 7j/7 à Paris – Intervention
+                rapide et fiable
+              </h1>
+              <p class="text-xl mb-8 text-blue-100">
+                Professionnel expérimenté pour tous vos besoins de serrurerie
+                d'urgence et de sécurité
+              </p>
+              <button
+                onclick="scrollToContact()"
+                class="bg-white text-blue-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition duration-300"
+              >
+                Demander une intervention
+              </button>
+            </div>
+            <div class="text-center">
+              <svg
+                class="w-64 h-64 mx-auto text-blue-200"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center p-6 bg-gray-50 rounded-lg">
+              <svg
+                class="w-12 h-12 mx-auto mb-4 text-blue-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">30 min d'intervention</h3>
+              <p class="text-gray-600">Intervention rapide</p>
+            </div>
+            <div class="text-center p-6 bg-gray-50 rounded-lg">
+              <svg
+                class="w-12 h-12 mx-auto mb-4 text-blue-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">Paris et alentours</h3>
+              <p class="text-gray-600">Toute la région parisienne</p>
+            </div>
+            <div class="text-center p-6 bg-gray-50 rounded-lg">
+              <svg
+                class="w-12 h-12 mx-auto mb-4 text-blue-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <h3 class="text-lg font-semibold mb-2">Tarifs transparents</h3>
+              <p class="text-gray-600">Devis clair et sans surprise</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Services -->
+    <section id="services" class="page-section py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Nos Services</h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Découvrez notre gamme complète de services de serrurerie pour
+            particuliers et professionnels
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">
+              Ouverture de porte claquée
+            </h3>
+            <p class="text-gray-600">
+              Intervention rapide pour ouvrir votre porte sans casser la serrure
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Remplacement de serrure</h3>
+            <p class="text-gray-600">
+              Installation de nouvelles serrures haute sécurité
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Installation de verrou</h3>
+            <p class="text-gray-600">
+              Pose de verrous supplémentaires pour renforcer votre sécurité
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Blindage de porte</h3>
+            <p class="text-gray-600">
+              Renforcement de votre porte existante pour une sécurité optimale
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Pose de porte blindée</h3>
+            <p class="text-gray-600">
+              Installation complète de portes blindées certifiées
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="bg-white p-6 rounded-lg shadow-md card-hover">
+            <svg
+              class="w-12 h-12 mb-4 text-blue-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+              />
+            </svg>
+            <h3 class="text-xl font-semibold mb-3">Copie de clé sécurisée</h3>
+            <p class="text-gray-600">
+              Duplication de clés traditionnelles et haute sécurité
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page À propos -->
+    <section id="apropos" class="page-section py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">
+              À propos de nous
+            </h2>
+            <p class="text-gray-600 mb-6">
+              Fort de plus de 15 ans d'expérience dans la serrurerie, notre
+              équipe d'artisans qualifiés vous accompagne dans vos projets de
+              sécurisation et de dépannage.
+            </p>
+            <p class="text-gray-600 mb-6">
+              Nous intervenons sur Paris et la proche banlieue avec une
+              intervention sous 30 minutes pour les urgences. Notre service est
+              disponible 24h/24 et 7j/7 pour répondre à tous vos besoins.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-blue-800 mr-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="text-gray-700">Plus de 15 ans d'expérience</span>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-blue-800 mr-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="text-gray-700">Intervention 24h/24 - 7j/7</span>
+              </div>
+              <div class="flex items-center">
+                <svg
+                  class="w-5 h-5 text-blue-800 mr-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="text-gray-700"
+                  >Zone d'intervention : Paris et banlieue proche</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <svg
+              class="w-80 h-80 mx-auto text-blue-100"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Contact -->
+    <section id="contact" class="page-section py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Contactez-nous</h2>
+          <p class="text-gray-600">
+            Une urgence ? Besoin d'un devis ? Contactez-nous dès maintenant
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Formulaire de contact -->
+          <div class="bg-white p-8 rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-6">Demande d'intervention</h3>
+            <form id="contact-form" class="space-y-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Prénom</label
+                >
+                <input
+                  type="text"
+                  id="prenom"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Téléphone</label
+                >
+                <input
+                  type="tel"
+                  id="telephone"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Adresse</label
+                >
+                <input
+                  type="text"
+                  id="adresse"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-blue-800 text-white py-3 px-6 rounded-md hover:bg-blue-900 transition duration-300"
+              >
+                Envoyer la demande
+              </button>
+            </form>
+          </div>
+
+          <!-- Informations de contact -->
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Urgence 24h/24</h3>
+              <a
+                href="tel:0123456789"
+                class="text-2xl font-bold text-blue-800 hover:text-blue-900"
+                >01 23 45 67 89</a
+              >
+              <p class="text-gray-600 mt-2">Disponible tous les jours</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">WhatsApp</h3>
+              <div class="flex items-center">
+                <svg
+                  class="w-6 h-6 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                  />
+                </svg>
+                <span class="text-lg text-gray-700">Chat disponible</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Notre localisation</h3>
+              <div
+                class="bg-gray-200 h-48 rounded-lg flex items-center justify-center"
+              >
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6884.291464531274!2d2.2914711454768733!3d48.85686329193207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1751897021954!5m2!1sfr!2sfr"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Simulateur -->
+    <section id="simulateur" class="page-section py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Simulateur de devis
+          </h2>
+          <p class="text-gray-600">
+            Obtenez une estimation rapide pour votre intervention
+          </p>
+        </div>
+
+        <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="space-y-6">
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Type de service</label
+                >
+                <select
+                  id="service-type"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Choisir un service</option>
+                  <option value="ouverture">Ouverture de porte claquée</option>
+                  <option value="remplacement">Remplacement de serrure</option>
+                  <option value="verrou">Installation de verrou</option>
+                  <option value="blindage">Blindage de porte</option>
+                  <option value="porte-blindee">Pose de porte blindée</option>
+                  <option value="copie-cle">Copie de clé sécurisée</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2"
+                  >Type de porte</label
+                >
+                <select
+                  id="door-type"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Choisir le type de porte</option>
+                  <option value="bois">Porte en bois</option>
+                  <option value="blindee">Porte blindée</option>
+                  <option value="pvc">Porte PVC</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="flex items-center">
+                  <input type="checkbox" id="urgence" class="mr-2" />
+                  <span class="text-sm font-medium text-gray-700"
+                    >Intervention d'urgence</span
+                  >
+                </label>
+              </div>
+
+              <button
+                onclick="calculateEstimate()"
+                class="w-full bg-blue-800 text-white py-3 px-6 rounded-md hover:bg-blue-900 transition duration-300"
+              >
+                Calculer l'estimation
+              </button>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold mb-4">Estimation</h3>
+              <div id="estimate-result" class="text-center py-8">
+                <p class="text-gray-600">
+                  Sélectionnez un service pour obtenir une estimation
+                </p>
+              </div>
+              <button
+                id="devis-btn"
+                onclick="openDevisModal()"
+                class="w-full bg-green-600 text-white py-3 px-6 rounded-md hover:bg-green-700 transition duration-300 mt-4"
+                style="display: none"
+              >
+                Demander un devis personnalisé
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bouton flottant d'urgence -->
+    <button
+      onclick="openUrgenceModal()"
+      class="floating-btn bg-red-600 text-white p-4 rounded-full shadow-lg hover:bg-red-700 transition duration-300"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+        />
+      </svg>
+      <span class="ml-2 hidden md:inline">Urgence</span>
+    </button>
+
+    <!-- Urgence -->
+    <div id="urgence-modal" class="modal">
+      <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xl font-bold text-red-600">Urgence 24h/24</h3>
+          <button
+            onclick="closeUrgenceModal()"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="mb-6">
+          <p class="text-gray-700 mb-4">Pour une intervention d'urgence :</p>
+          <a
+            href="tel:0123456789"
+            class="block bg-red-600 text-white text-center py-3 px-6 rounded-md hover:bg-red-700 transition duration-300 mb-4"
+          >
+            <strong>Appelez maintenant : 01 23 45 67 89</strong>
+          </a>
+          <p class="text-sm text-gray-600 text-center">
+            Ou remplissez le formulaire ci-dessous
+          </p>
+        </div>
+
+        <form id="urgence-form" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Prénom</label
+            >
+            <input
+              type="text"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Téléphone</label
+            >
+            <input
+              type="tel"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Adresse</label
+            >
+            <input
+              type="text"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Description de l'urgence</label
+            >
+            <textarea
+              rows="3"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-red-600 text-white py-3 px-6 rounded-md hover:bg-red-700 transition duration-300"
+          >
+            Demander une intervention urgente
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Devis -->
+    <div id="devis-modal" class="modal">
+      <div class="bg-white p-8 rounded-lg shadow-xl max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-xl font-bold text-blue-800">Devis personnalisé</h3>
+          <button
+            onclick="closeDevisModal()"
+            class="text-gray-500 hover:text-gray-700"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <form id="devis-form" class="space-y-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Nom</label
+            >
+            <input
+              type="text"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Téléphone</label
+            >
+            <input
+              type="tel"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1"
+              >Commentaire</label
+            >
+            <textarea
+              rows="4"
+              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Décrivez votre projet en détail..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-800 text-white py-3 px-6 rounded-md hover:bg-blue-900 transition duration-300"
+          >
+            Demander le devis
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
